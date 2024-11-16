@@ -7,6 +7,7 @@ void Read(int mas[N_Max][M_Max], int& n, int& m);
 bool isPrime(int num);
 bool checkColumn(int mas[N_Max][M_Max], int n, int m);
 void sortRow(int row[], int n);
+void swapRows(int a[], int b[], int m)
 int rowProduct(int row[], int m);
 void proccess(int mas[N_Max][M_Max], int n, int m);
 void Write(int mas[N_Max][M_Max], int n, int m);
