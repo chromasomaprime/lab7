@@ -3,21 +3,17 @@
 // Если в матрице есть столбец, не содержащий простых чисел, сумма элементов которого равна 0,
 // упорядочить элементы строк по неубыванию абсолютных величин. 
 
-
-
 #include <iostream>
 #include "func.hpp"
 
 int main()
 {
+    int matrix[N_Max][N_Max];
     int n;
-    int m;
-    int mas[N_Max][M_Max];
-    Read(mas, n, m);
-    if (checkColumn(mas, n, m))
-    {
-        proccess(mas,n,m);
-    }
-    Write(mas, n, m);
+
+    readMatrix(matrix, n);
+    processMatrix(matrix, n);
+    writeMatrix(matrix, n);
+
     return 0;
 }
