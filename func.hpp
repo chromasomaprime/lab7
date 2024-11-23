@@ -1,13 +1,10 @@
 #pragma once
 
 const int N_Max = 100;
-const int M_Max = 100;
 
-void Read(int mas[N_Max][M_Max], int& n, int& m);
+void readMatrix(int matrix[N_Max][N_Max], int& n);
 bool isPrime(int num);
-bool checkColumn(int mas[N_Max][M_Max], int n, int m);
-void sortRow(int row[], int n);
-void swapRows(int a[], int b[], int m);
-int rowProduct(int row[], int m);
-void proccess(int mas[N_Max][M_Max], int n, int m);
-void Write(int mas[N_Max][M_Max], int n, int m);
+bool checkColumn(int matrix[N_Max][N_Max], int n, int col);
+void sortRowByAbs(int row[], int n);
+void processMatrix(int matrix[N_Max][N_Max], int n);
+void writeMatrix(int matrix[N_Max][N_Max], int n);
